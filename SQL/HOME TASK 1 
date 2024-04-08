@@ -1,0 +1,27 @@
+CREATE DATABASE Department
+CREATE TABLE Employee
+(
+    ID int, 
+    Fullname NVARCHAR(20),
+    Age int,
+    Email VARCHAR(25),
+    Salary DECIMAL(4,2)
+)
+
+ALTER TABLE Employees
+ALTER COLUMN Salary DECIMAL(6,2);
+
+INSERT INTO Employee VALUES 
+(1010,'Arzu Farajova',24,'arzfa@gmail.com',2500.50),
+(1011,'Roya Mammadli',30,'roya@mail.ru',3400.60),
+(1012,'Pera Andio',26,'pera@gmail.com',4400.00)
+
+UPDATE Employee SET Salary = 3000.50 Where ID=1010
+
+SELECT * FROM Employee
+
+SELECT Salary > 3200 FROM Employee
+
+SELECT * FROM Employee WHERE Salary>3200
+
+--done
